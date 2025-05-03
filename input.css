@@ -7,3 +7,27 @@
     font-family: 'Quicksand', sans-serif;
   }
 }
+
+@layer utilities {
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  .animate-wave {
+    animation: wave 8s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
